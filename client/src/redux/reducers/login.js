@@ -1,7 +1,7 @@
-export const LOGOUT = "LOGOUT";
 export const LOGIN_START = "LOGIN_START";
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const LOGIN_FAILURE = "LOGIN_FAILURE";
+export const LOGOUT = "LOGOUT";
 
 export const login = authData => async dispatch => {
   dispatch({ type: LOGIN_START });
@@ -25,4 +25,9 @@ export const login = authData => async dispatch => {
   } catch (error) {
     dispatch({ type: LOGIN_FAILURE, payload: error.response.data.error });
   }
+};
+
+export const logout = () => dispatch => {
+  localStorage.clear();
+  dispatch({ type: LOGOUT });
 };
