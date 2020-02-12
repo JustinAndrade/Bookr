@@ -39,9 +39,9 @@ class Book extends Component {
     const { reviews } = this.state;
 
     return (
-      <div className="page-container">
+      <div className="details-container">
         <div className="book-header">
-          <img src={book_img} alt={title} />
+          <img class="book-img" src={book_img} alt={title} />
 
           <div className="book-header__details">
             <h1>{title}</h1>

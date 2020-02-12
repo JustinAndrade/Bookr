@@ -15,6 +15,20 @@ h2 {
   font-weight: bold;
 }
 
+.page-container {
+  background-color: white;
+  padding: 3% 5%;
+  box-shadow: 0 0 16px lightgrey;
+  border-radius: 5px;
+  width: 100%;
+  margin: 2rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  @media only screen and (max-width: 550px) {
+    flex-direction: column;
+  }
+}
+
 .header {
   display: flex;
   flex-direction: row;
@@ -24,10 +38,6 @@ h2 {
   background-color: white;
   box-shadow: 0 4px 8px lightgrey;
   position: relative;
-}
-
-.sign-in-button {
-  width: 126px;
 }
 
 .reviews {
@@ -51,54 +61,6 @@ h2 {
   font-family: Lora, serif;
   font-style: italic;
   font-size: 1rem;
-}
-
-.modal-title {
-  width: 100%;
-}
-
-.login-header {
-  background-color: #3040c4;
-  color: white;
-}
-
-.login-header img {
-  display: block;
-  margin: auto;
-  height: 65px;
-}
-
-.modal-body {
-  display: flex;
-  justify-content: space-between;
-}
-
-.modal-form {
-  width: 80%;
-}
-
-.modal-form button {
-  display: inline-block;
-  margin-top: 1rem;
-}
-
-.modal-divider {
-  width: 1px;
-  background-color: lightgray;
-}
-
-.modal-body div label {
-  display: block;
-  margin-top: 1rem;
-}
-
-.modal-body div input {
-  display: block;
-  width: 100%;
-}
-
-.close {
-  color: white;
 }
 
 /* AddReview CSS */
