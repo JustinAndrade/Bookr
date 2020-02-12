@@ -1,7 +1,11 @@
+import axios from "axios";
+
 export const LOGIN_START = "LOGIN_START";
 export const LOGIN_SUCCESS = "LOGIN_SUCCESS";
 export const LOGIN_FAILURE = "LOGIN_FAILURE";
 export const LOGOUT = "LOGOUT";
+
+const BOOKR_API_DOMAIN = process.env.REACT_APP_BOOKR_API_DOMAIN;
 
 export const login = authData => async dispatch => {
   dispatch({ type: LOGIN_START });

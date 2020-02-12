@@ -1,6 +1,10 @@
+import axios from "axios";
+
 export const API_REQUEST_START = "API_REQUEST_START";
 export const API_REQUEST_SUCCESS = "API_REQUEST_SUCCESS";
 export const API_REQUEST_FAILURE = "API_REQUEST_FAILURE";
+
+const BOOKR_API_DOMAIN = process.env.REACT_APP_BOOKR_API_DOMAIN;
 
 export const getBooks = () => async dispatch => {
   dispatch({ type: API_REQUEST_START });
