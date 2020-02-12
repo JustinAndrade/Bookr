@@ -1,0 +1,290 @@
+@import "~antd/dist/antd.css";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 50px;
+  background-color: white;
+  box-shadow: 0 4px 8px lightgrey;
+  position: relative;
+}
+.book {
+  height: 550px;
+  width: 25%;
+  @media only screen and (max-width: 550px) {
+    width: 100%;
+  }
+}
+
+.item {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  align-items: center;
+  font-size: 16px;
+  padding: 2% 0;
+  width: 100%;
+  border-bottom: 1px solid #e5e5e5;
+  margin: 10% auto;
+  position: relative;
+  @media only screen and (max-width: 550px) {
+    border-bottom: none;
+  }
+}
+
+.cover {
+  width: 175px;
+  height: 235px;
+  @media only screen and (max-width: 850px) {
+    height: 175px;
+    width: auto;
+  }
+  @media only screen and (max-width: 750px) {
+    height: 150px;
+    width: auto;
+  }
+  @media only screen and (max-width: 550px) {
+    height: 280px;
+    width: auto;
+  }
+}
+
+.details {
+  height: 250px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  @media only screen and (max-width: 950px) {
+    width: 150px;
+  }
+  @media only screen and (max-width: 750px) {
+    width: 120px;
+  }
+  @media only screen and (max-width: 550px) {
+    border-bottom: 1px solid #e5e5e5;
+    text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.details h3 {
+  font-family: Lora, serif;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 31px;
+  margin-bottom: 2%;
+  font-size: 1.4rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 250px;
+  @media only screen and (max-width: 850px) {
+    font-size: 1rem;
+  }
+  @media only screen and (max-width: 550px) {
+    font-size: 1rem;
+    white-space: none;
+    overflow: none;
+    text-overflow: none;
+    max-width: 450px;
+  }
+}
+
+.author {
+  font-family: Roboto, sans-serif;
+  margin: 10% auto;
+  font-size: 1rem;
+  /* white-space: nowrap; */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /* height: 85px; */
+  @media only screen and (max-width: 950px) {
+    font-size: 0.7rem;
+  }
+}
+
+.rating {
+  padding: 5% 0;
+  @media only screen and (max-width: 950px) {
+    padding: 2%;
+    width: 150px;
+  }
+  svg {
+    @media only screen and (max-width: 950px) {
+      width: 12px;
+    }
+  }
+}
+
+.container-search {
+  letter-spacing: 1px;
+}
+
+.container-h2 {
+  letter-spacing: 5px;
+  font-weight: bold;
+  padding: 5px 0;
+  text-shadow: 1px 1px rgb(211, 211, 211);
+}
+
+.book-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.book-header img {
+  display: block;
+  width: 30%;
+}
+
+.book-header__details {
+  width: 60%;
+}
+
+.book-header__details h1 {
+  font-family: Lora, serif;
+  font-style: italic;
+  font-weight: 700;
+  font-size: 2.5em;
+}
+
+.book-header__details h2 {
+  font-family: Roboto, sans-serif;
+  font-size: 1.5rem;
+}
+
+.book-header__details button {
+  display: inline-block;
+  margin-top: 1rem;
+  margin-right: 1rem;
+}
+
+.page-container .book-header .book-header__details .button-wrapper {
+  display: flex;
+}
+
+.sign-in-button {
+  width: 126px;
+}
+
+.reviews {
+  margin: 2rem auto 2rem;
+}
+
+.review {
+  margin: 0 auto 2rem;
+}
+
+.reviewed-by {
+  display: block;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-top: 0.7rem;
+  font-size: 0.8rem;
+}
+
+.reviewer {
+  display: block;
+  font-family: Lora, serif;
+  font-style: italic;
+  font-size: 1rem;
+}
+
+.modal-title {
+  width: 100%;
+}
+
+.login-header {
+  background-color: #3040c4;
+  color: white;
+}
+
+.login-header img {
+  display: block;
+  margin: auto;
+  height: 65px;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-form {
+  width: 80%;
+}
+
+.modal-form button {
+  display: inline-block;
+  margin-top: 1rem;
+}
+
+.modal-divider {
+  width: 1px;
+  background-color: lightgray;
+}
+
+.modal-body div label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.modal-body div input {
+  display: block;
+  width: 100%;
+}
+
+.close {
+  color: white;
+}
+
+/* AddReview CSS */
+
+.add-review-wrapper {
+  width: 1354px;
+  margin: 0 auto;
+}
+
+.review-form-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 30rem;
+  width: 100%;
+}
+
+.review-form-wrapper .review-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  height: 25rem;
+  width: 100%;
+}
+
+.review-form-wrapper .review-form textarea {
+  height: 100%;
+  width: 100%;
+  padding: 1rem;
+}
+
+.review-form-wrapper .review-form .form-button {
+  margin-top: 0.5rem;
+}
+
+.title-wrapper {
+  display: flex;
+  margin: 2rem 0;
+}
+
+.title-wrapper .title-author {
+  height: 100%;
+  width: 100%;
+  padding-left: 1rem;
+}

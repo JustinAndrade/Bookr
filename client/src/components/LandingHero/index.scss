@@ -1,0 +1,33 @@
+.bookr-hero {
+  background-color: #f3c6bd !important;
+  position: relative;
+  height: 250px;
+  width: 100%;
+  margin: 25px auto 30px;
+  border-radius: 5px;
+  box-shadow: 1px 2px 2px rgb(211, 211, 211);
+  padding: 20px 20px 0 45px;
+  display: flex;
+}
+.jumbotron {
+  background: #f3c6bd;
+  z-index: -1;
+}
+
+.bookr-hero h1 {
+  font-size: 1.85rem;
+}
+
+.hero-img {
+  width: auto;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 15%;
+  z-index: -1;
+
+  @media only screen and (max-width: 800px) {
+    height: 40%;
+    top: 40%;
+  }
+}

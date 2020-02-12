@@ -1,0 +1,178 @@
+.nav-buttons {
+  @media only screen and (max-width: 1000px) {
+    font-size: 0.9rem;
+  }
+  @media only screen and (max-width: 700px) {
+    font-size: 0.7rem;
+  }
+}
+
+button {
+  padding: 0 10px;
+  background: white;
+  border: none;
+  color: #2b292d;
+  text-decoration: none;
+}
+
+button:hover {
+  text-decoration: underline;
+  color: #000;
+  font-weight: 500;
+}
+
+button:focus {
+  outline: none;
+}
+
+.modal-container {
+  display: flex;
+  height: 500px;
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+  }
+}
+
+.modal-header {
+}
+
+.modal-container .modalImg {
+  height: 100%;
+  width: 30%;
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.modal-img {
+  @media only screen and (max-width: 1000px) {
+    height: 70%;
+    margin-bottom: 10%;
+    // position: absolute;
+  }
+}
+
+.modal-body {
+  padding: 0;
+}
+
+.modal-img {
+  /* background: black; */
+}
+
+.modal-info {
+  height: 100px;
+  width: 100%;
+  padding: 10px;
+  margin-left: 20px;
+}
+
+.modal-title {
+  width: 100%;
+}
+
+.modal-body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.modal-register-form {
+  margin-top: 20px;
+  width: 100%;
+  font-size: 0.8rem;
+
+  h2 {
+    font-size: 0.9rem;
+  }
+}
+
+.modal-register-form button {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #f36b7f;
+  border: none;
+  border-radius: 10px;
+  width: 80px;
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+  }
+}
+
+.modal-register-form button:hover {
+  background: #f52d4b;
+}
+
+#register-form {
+  margin: 10px 0;
+}
+
+#register-input {
+  margin-right: 50%;
+  width: 50%;
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+  }
+}
+
+.modal-form {
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+}
+
+.modal-form button {
+  display: inline-block;
+  margin-top: 1rem;
+  background: #f36b7f;
+  border: none;
+  border-radius: 10px;
+  width: 80px;
+}
+
+.modal-form button:hover {
+  background: #f52d4b;
+}
+
+.modal-divider {
+  width: 1px;
+  background-color: lightgray;
+}
+
+.modal-body div label {
+  display: block;
+  margin-top: 1rem;
+}
+
+.modal-body div input {
+  margin: 10px auto;
+  width: 50%;
+}
+
+.close {
+  color: black;
+  background: #fff;
+  border: none;
+}
+
+.register-portal {
+  margin: 10px;
+}
+
+.register-portal span a:hover {
+  text-decoration: underline;
+}
+
+.redirect {
+  padding: 15px;
+}
+
+.redirect a {
+  margin: 15px;
+}
+
+.redirect a:hover {
+  text-decoration: underline;
+}
+
+#RegisterModal {
+}
