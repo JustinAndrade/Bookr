@@ -1,23 +1,24 @@
 import React from "react";
 import { connect } from "react-redux";
+import { Carousel } from "react-responsive-carousel";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
 import "./index.scss";
 
 class BookCarousel extends React.Component {
-  constructor(props) {
-    super(props);
-    console.log(props);
-  }
   render() {
-    return this.props.books.map(item => {
-      if (item.id < 12) {
-        return (
-          <div className="solo-slide">
-            <img className="slide-image" src={item.book_img} alt={item.title} />{" "}
-          </div>
-        );
-      }
-    });
+    return (
+      <Carousel autoPlay showArrows={true}>
+        {this.props.books.map(book => (
+          <img
+            style={{ height: "350px", width: "auto" }}
+            src={book.book_img}
+            alt={book.title}
+            key={book.title}
+          />
+        ))}
+      </Carousel>
+    );
   }
 }
 

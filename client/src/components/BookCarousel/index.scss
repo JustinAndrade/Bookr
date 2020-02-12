@@ -1,43 +1,17 @@
-.carousel-wrapper {
-  align-self: center;
-  margin: 0 auto;
-  padding-top: 0.2rem;
-  background-color: #282c34;
-  width: 100%;
-  margin-bottom: 2%;
+.control-arrow {
+  background: #f3c6bd !important;
+  height: 20%;
+  margin: auto !important;
 }
 
-.slick-slide {
-  opacity: 0.2;
+.thumbs {
+  // width: 10% !important;
 }
 
-.slick-slide.slick-active.slick-current {
-  opacity: 1;
+.selected {
+  background: none !important;
 }
 
-.slide-image {
-  height: 15rem;
-  width: auto;
-}
-
-.solo-slide * {
-  width: 50%;
-}
-
-.slide-image {
-  width: auto;
-}
-
-.slick-arrow:before * {
-  background: white;
-}
-
-.slick-next:before {
-  color: #000;
-  opacity: 1;
-}
-
-.slick-prev:before {
-  color: #000;
-  opacity: 1;
+.slide {
+  background: none !important;
 }

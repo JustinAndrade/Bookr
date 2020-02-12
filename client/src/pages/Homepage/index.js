@@ -11,7 +11,9 @@ const HomePage = () => (
     <div className="container-h2">
       <h2>Featured Books</h2>
     </div>
-    <BookCarousel />
+    <div>
+      <BookCarousel />
+    </div>
     <div className="container-h2">
       <h2>Browse Collection</h2>
     </div>

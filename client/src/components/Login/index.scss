@@ -22,14 +22,28 @@ button:focus {
 .modal-container {
   display: flex;
   height: 500px;
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+  }
 }
 
 .modal-header {
 }
 
-.modal-container img {
+.modal-container .modalImg {
   height: 100%;
   width: 30%;
+  @media only screen and (max-width: 1000px) {
+    display: none;
+  }
+}
+
+.modal-img {
+  @media only screen and (max-width: 1000px) {
+    height: 70%;
+    margin-bottom: 10%;
+    // position: absolute;
+  }
 }
 
 .modal-body {
@@ -59,6 +73,11 @@ button:focus {
 .modal-register-form {
   margin-top: 20px;
   width: 100%;
+  font-size: 0.8rem;
+
+  h2 {
+    font-size: 0.9rem;
+  }
 }
 
 .modal-register-form button {
@@ -68,6 +87,9 @@ button:focus {
   border: none;
   border-radius: 10px;
   width: 80px;
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+  }
 }
 
 .modal-register-form button:hover {
@@ -81,6 +103,9 @@ button:focus {
 #register-input {
   margin-right: 50%;
   width: 50%;
+  @media only screen and (max-width: 1000px) {
+    width: 100%;
+  }
 }
 
 .modal-form {

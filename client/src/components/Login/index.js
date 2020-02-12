@@ -16,7 +16,7 @@ import { connect } from "react-redux";
 import { login } from "../../store/actions/login";
 import { register } from "../../store/actions/register";
 
-import "./index.css";
+import "./index.scss";
 
 class Login extends React.Component {
   constructor(props) {
@@ -97,7 +97,11 @@ class Login extends React.Component {
         >
           <ModalBody>
             <div className="modal-container">
-              <img src={modalImage} alt="login character" />
+              <img
+                className="modalImg"
+                src={modalImage}
+                alt="login character"
+              />
               <div className="modal-info">
                 <div>
                   <button
@@ -165,7 +169,11 @@ class Login extends React.Component {
         >
           <ModalBody>
             <div className="modal-container">
-              <img src={modalImage} alt="login character" />
+              <img
+                className="modalImg"
+                src={modalImage}
+                alt="login character"
+              />
               <div className="modal-info">
                 <div>
                   <button
