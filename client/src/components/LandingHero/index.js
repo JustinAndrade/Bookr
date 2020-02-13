@@ -1,7 +1,7 @@
 import React from "react";
 import { Jumbotron, Col } from "reactstrap";
 
-import heroImg from "../../assets/hero-img.png";
+import heroImg from "../../assets/heroImg.png";
 
 import "./index.scss";
 
