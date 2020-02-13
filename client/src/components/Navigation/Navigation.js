@@ -6,7 +6,7 @@ import Login from "../Login";
 
 import { logout } from "../../store/actions/login";
 
-import "./index.css";
+import "./index.scss";
 
 const Navigation = props => {
   return (
