@@ -1,6 +1,6 @@
 import React from "react";
 import logo from "../../assets/logo.svg";
-import modalImage from "../../assets/modal-img.jpg";
+import modalImage from "../../assets/modalImg.jpg";
 import {
   Alert,
   Button,
