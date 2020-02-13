@@ -10,7 +10,7 @@ import { getBooks } from "./store/actions/api";
 import { Route } from "react-router-dom";
 import { connect } from "react-redux";
 
-import "./App.scss";
+import "./App.css";
 
 class App extends Component {
   componentDidMount() {

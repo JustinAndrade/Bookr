@@ -9,7 +9,7 @@ import App from "./App";
 import rootReducer from "./store/reducer";
 
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./index.scss";
+import "./index.css";
 
 const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
 const store = createStore(
