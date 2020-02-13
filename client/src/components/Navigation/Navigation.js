@@ -1,12 +1,12 @@
 import React from "react";
 import { connect } from "react-redux";
 import { Link } from "react-router-dom";
-import "../../App.scss";
+import "../../App.css";
 import Login from "../Login";
 
 import { logout } from "../../store/actions/login";
 
-import "./index.scss";
+import "./index.css";
 
 const Navigation = props => {
   return (
